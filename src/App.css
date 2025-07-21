@@ -1,6 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+}
+
+.wave {
+}
+
+.wave--bottom {
+}
+
+.wave--top {
+}
+
+.section {
+}
+
+.section__container--inverse {
+}
+
+.section--white {
+}
+
+.section__container {
+}
+
+.section__picture {
+}
+
+.section__img {
+}
+
+.section__texts {
+}
+
+.subtitles {
+}
+
+.section__paragraph {
 }

@@ -23,6 +23,10 @@ export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }:
                     </p>
                 </div>
             </div>
+
+            {/* Ola en Background */}
+            <div className="wave wave--top"></div>
+            <div className="wave wave--bottom"></div>
         </section>
 
     )

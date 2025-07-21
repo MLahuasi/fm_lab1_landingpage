@@ -1,9 +1,10 @@
-import "./index.css";
-import logo from "../../../assets/images/logo.svg";
-import screen_mockups from "../../../assets/images/screen-mockups.svg";
-import icon_communities from "../../../assets/images/icon-communities.svg";
-import icon_messages from "../../../assets/images/icon-messages.svg";
 import { HeaderCounter } from "..";
+import { Button } from "../../components";
+import "./index.css";
+import logo from "../../assets/images/logo.svg";
+import screen_mockups from "../../assets/images/screen-mockups.svg";
+import icon_communities from "../../assets/images/icon-communities.svg";
+import icon_messages from "../../assets/images/icon-messages.svg";
 
 export const Header = () => {
     return (
@@ -14,7 +15,7 @@ export const Header = () => {
                     <img src={logo} alt="" className="hero__huddle" />
                 </figure>
                 {/* Botón */}
-                <a href="#" className="header__cta">Try it free</a>
+                <Button title={"Try It Free"} href={"#"} className={"header__cta"} />
             </nav>
 
             {/* Titulo Parrafo Boton Imagen Contadores */}
@@ -25,7 +26,7 @@ export const Header = () => {
                     {/* Parrafo */}
                     <p className="header__paragraph">Huddle re-imagines the way build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discusion.</p>
                     {/* Botón */}
-                    <a href="#" className="cta">Get Started For Free</a>
+                    <Button title={"Get Started For Free"} href={"#"} className={"cta"} />
                 </div>
                 {/* Imagen */}
                 <figure className="header__picture">
@@ -37,6 +38,9 @@ export const Header = () => {
                     <HeaderCounter src={icon_messages} number={"2.7m+"} text={"Messages Sent"} />
                 </footer>
             </section>
+
+            {/* Ola en Background */}
+            <div className="wave wave--bottom"></div>
         </header>
     )
 }

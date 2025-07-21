@@ -1,9 +1,11 @@
+import { MainItem, MainQuestion } from "..";
 import "./index.css";
-import illustration_grow_together from "../../../assets/images/illustration-grow-together.svg";
-import illustration_flowing_conversation from "../../../assets/images/illustration-flowing-conversation.svg";
-import illustration_your_users from "../../../assets/images/illustration-your-users.svg";
 
-import { MainItem } from "..";
+import illustration_grow_together from "../../assets/images/illustration-grow-together.svg";
+import illustration_flowing_conversation from "../../assets/images/illustration-flowing-conversation.svg";
+import illustration_your_users from "../../assets/images/illustration-your-users.svg";
+
+
 
 export const Main = () => {
     return (
@@ -29,9 +31,10 @@ export const Main = () => {
                 bgModifier={"section--white"}
                 inverseImage={"section__container--inverse"}
             />
+            <MainQuestion subtitle={"Ready To Build Your Community?"} href={"#"} title={"Get Started For Free"} />
         </main>
     )
 }
 
-// 
+//
 // 
