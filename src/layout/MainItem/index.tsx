@@ -14,6 +14,8 @@ interface MainItemProps {
 
 export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }: MainItemProps) => {
 
+    console.log({ waveBottom, waveTop, Source: "MainItem" });
+
     return (
         <WaveSection
             waveTop={waveTop}

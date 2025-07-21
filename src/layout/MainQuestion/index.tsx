@@ -11,6 +11,8 @@ interface MainQuestionProps {
 }
 export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
 
+    console.log({ waveBottom, waveTop, Source: "MainQuestion" });
+
     return (
         <WaveSection
             waveTop={waveTop}

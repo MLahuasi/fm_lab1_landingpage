@@ -10,6 +10,7 @@ import waveBottom from "../../assets/images/bg-section-top-mobile-1.svg";
 
 
 export const Header = () => {
+    console.log({ waveBottom, Source: "Header" });
     return (
         <WaveSection
             waveBottom={waveBottom}
