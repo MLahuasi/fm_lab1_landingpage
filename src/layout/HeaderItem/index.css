@@ -1,10 +1,14 @@
 .header__item {
-}
-
-.header__icon {
+  overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .header__number {
+  font-size: 3.5rem;
+}
+
+.header__icon {
+  display: block;
 }
 
 .header__community {

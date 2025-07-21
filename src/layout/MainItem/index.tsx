@@ -1,4 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import "./index.css";
+// ondas
+import bg_section_bottom_mobile_1 from "../../assets/images/bg-section-bottom-mobile-1.svg";
+import bg_section_top_mobile_2 from "../../assets/images/bg-section-top-mobile-2.svg";
 
 interface MainItemProps {
     src: string;
@@ -10,8 +14,18 @@ interface MainItemProps {
 
 export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }: MainItemProps) => {
 
+    const headerStyle =
+        bgModifier == "section--white"
+            ? {
+                ['--wave-top' as any]: `url(${bg_section_bottom_mobile_1})`,
+                ['--wave-bottom' as any]: `url(${bg_section_top_mobile_2})`,
+            }
+            : undefined;
+
     return (
-        <section className={bgModifier == "none" ? "section" : `section ${bgModifier}`}>
+        <section
+            className={bgModifier == "none" ? "section" : `section ${bgModifier}`}
+            style={headerStyle}>
             <div className={(inverseImage == "none" ? "section__container container" : `section__container ${inverseImage} container`)}>
                 <figure className="section__picture">
                     <img src={src} alt="" className="section__img" />
@@ -31,3 +45,6 @@ export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }:
 
     )
 }
+
+
+

@@ -1,38 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Marcar border para maquetar */
+  /* outline: 1px solid red; */
+}
+
+/* Constantes */
+:root {
+  /* Fuente Body */
+  --font-body: "Open Sans", sans-serif;
+  /* Fuentes H (H1, H2, etc) */
+  --font-headings: "Poppins", sans-serif;
+  /* Padding de los contenedores */
+  --padding-container: 4rem 0;
+
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+
+  /* Color botón */
+  --button-color: hsl(192, 100%, 9%, 0.5);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
 .container {
+  /* ancho máximo */
+  max-width: 1200px;
+  /* Ancho del 90% */
+  width: 90%;
+  /* auto calcula automáticamente en estos casos el margen izquiero y derecho */
+  margin: 0 auto;
+  /* Ocultar lo que salda del contenedor */
+  overflow: hidden;
+  /* separación interna de los contenedores */
+  padding: var(--padding-container);
 }
 
 .wave {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
 }
 
 .wave--bottom {
+  left: 0;
+  bottom: 0;
+  background-image: var(--wave-bottom);
 }
 
 .wave--top {
-}
-
-.section {
-}
-
-.section__container--inverse {
-}
-
-.section--white {
-}
-
-.section__container {
-}
-
-.section__picture {
-}
-
-.section__img {
-}
-
-.section__texts {
-}
-
-.subtitles {
-}
-
-.section__paragraph {
+  left: 0;
+  top: 0;
+  background-image: var(--wave-top);
 }

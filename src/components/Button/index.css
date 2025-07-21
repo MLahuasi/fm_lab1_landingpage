@@ -1,7 +1,44 @@
 .cta {
+  /* 
+  Le dice al navegador que el elemento debe comportarse como:
+  - inline → se coloca en línea con otros elementos (como texto).
+  - block → puede tener alto, ancho, padding, y margin vertical. 
+  */
+  display: inline-block;
+  /* Color background */
+  background-color: var(--pink);
+  /* Color del texto */
+  color: #fff;
+  /* Ajustar al tamaño del texto */
+  justify-self: center;
+  /* Espacio interno */
+  padding: 1em 1.8em;
+  /* Redondiar el botón */
+  border-radius: 2em;
+  /*  */
+  margin-top: 1em;
+  /* Peso de la fuente */
+  font-weight: 600;
+  /* Sombra */
+  box-shadow: -5px 8px 16px -10px var(--button-color);
+  /* Quitar líne del link */
+  text-decoration: none;
 }
 
 .header__cta {
+  color: var(--light-pink);
+  boder: 2px solid;
+  /* em calcula el tamaño en función del padre */
+  /* rem calcula el tamaño en función de la raiz html */
+  padding: 0.3em 1em;
+  /* Borde del botón */
+  border-radius: 2em;
+  /* Peso de la fuente */
+  font-weight: 600;
+  /* Quitar líne del link */
+  text-decoration: none;
+  /* Sombra del botón */
+  box-shadow: 0 0 1px var(--button-color);
 }
 
 .footer__cta {

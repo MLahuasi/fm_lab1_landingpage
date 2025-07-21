@@ -6,7 +6,6 @@ import illustration_flowing_conversation from "../../assets/images/illustration-
 import illustration_your_users from "../../assets/images/illustration-your-users.svg";
 
 
-
 export const Main = () => {
     return (
         <main className="main">
@@ -28,7 +27,7 @@ export const Main = () => {
                 src={illustration_your_users}
                 subtitle={"Your Users"}
                 paragraph={"It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately."}
-                bgModifier={"section--white"}
+                bgModifier={"none"}
                 inverseImage={"section__container--inverse"}
             />
             <MainQuestion subtitle={"Ready To Build Your Community?"} href={"#"} title={"Get Started For Free"} />
