@@ -11,14 +11,14 @@ interface MainQuestionProps {
     title: string;
 }
 export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
-    const headerStyle = {
-        ['--wave-top' as any]: `url(${bg_section_bottom_mobile_2})`,
-        ['--wave-bottom' as any]: `url(${bg_footer_top_mobile})`,
-    };
+
     return (
         <section
             className="question"
-            style={headerStyle}
+            style={{
+                ['--wave-top' as any]: `url(${bg_section_bottom_mobile_2})`,
+                ['--wave-bottom' as any]: `url(${bg_footer_top_mobile})`,
+            }}
         >
             <div className="question__texts container">
                 <h2 className="subtitle">{subtitle}</h2>
@@ -29,6 +29,6 @@ export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
             {/* Ola en Background */}
             <div className="wave wave--top"></div>
             <div className="wave wave--bottom"></div>
-        </section>
+        </section >
     )
 }
