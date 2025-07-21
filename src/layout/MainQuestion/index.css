@@ -1,6 +1,8 @@
 .question {
   position: relative;
   text-align: center;
+  --wave-top: url("../../assets/images/bg-section-bottom-mobile-2.svg");
+  --wave-bottom: url("../../assets/images/bg-footer-top-mobile.svg");
   --padding-container: 12rem 0 13rem;
 }
 
