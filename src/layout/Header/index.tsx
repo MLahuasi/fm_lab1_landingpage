@@ -44,9 +44,6 @@ export const Header = () => {
                     <HeaderCounter src={icon_messages} number={"2.7m+"} text={"Messages Sent"} />
                 </footer>
             </section>
-
-            {/* Ola en Background */}
-            <div className="wave wave--bottom"></div>
         </WaveSection>
     )
 }
