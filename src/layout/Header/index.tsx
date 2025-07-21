@@ -15,7 +15,8 @@ export const Header = () => {
         <header className="header"
             style={{
                 ['--wave-bottom' as any]: `url(${bg_section_top_mobile_1})`
-            }}>
+            }}
+        >
             <nav className="header__nav container">
                 {/* Logo */}
                 <figure className="header__logo">

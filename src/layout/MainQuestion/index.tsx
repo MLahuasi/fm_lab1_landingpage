@@ -16,7 +16,10 @@ export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
         ['--wave-bottom' as any]: `url(${bg_footer_top_mobile})`,
     };
     return (
-        <section className="question" style={headerStyle}>
+        <section
+            className="question"
+            style={headerStyle}
+        >
             <div className="question__texts container">
                 <h2 className="subtitle">{subtitle}</h2>
                 <Button title={title} href={href} className={"cta"} />

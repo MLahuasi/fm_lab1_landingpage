@@ -25,7 +25,8 @@ export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }:
     return (
         <section
             className={bgModifier == "none" ? "section" : `section ${bgModifier}`}
-            style={headerStyle}>
+            style={headerStyle}
+        >
             <div className={(inverseImage == "none" ? "section__container container" : `section__container ${inverseImage} container`)}>
                 <figure className="section__picture">
                     <img src={src} alt="" className="section__img" />

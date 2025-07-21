@@ -1,6 +1,7 @@
 .header {
   min-height: 100vh;
   position: relative;
+  /* --wave-bottom: url("../../assets/images/bg-section-top-mobile-1.svg"); */
 }
 
 .header__nav {
@@ -9,6 +10,7 @@
   align-items: center;
   /* Modificar el espacio de los contenedores */
   --padding-container: 4rem 0 3rem;
+  min-height: 60px;
 }
 
 .header__logo {

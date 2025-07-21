@@ -27,18 +27,13 @@
 
 .header__cta {
   color: var(--light-pink);
-  boder: 2px solid;
-  /* em calcula el tamaño en función del padre */
-  /* rem calcula el tamaño en función de la raiz html */
+  border: 2px solid;
   padding: 0.3em 1em;
-  /* Borde del botón */
   border-radius: 2em;
-  /* Peso de la fuente */
   font-weight: 600;
-  /* Quitar líne del link */
   text-decoration: none;
-  /* Sombra del botón */
   box-shadow: 0 0 1px var(--button-color);
+  z-index: 1;
 }
 
 .footer__cta {

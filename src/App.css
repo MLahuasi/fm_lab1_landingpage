@@ -24,7 +24,7 @@
   --very-pale-blue: hsl(207, 100%, 98%);
 
   /* Color botón */
-  --button-color: hsl(192, 100%, 9%, 0.5);
+  --button-color: hsla(192, 100%, 9%, 0.5);
 }
 
 body {
