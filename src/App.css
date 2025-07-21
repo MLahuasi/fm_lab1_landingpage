@@ -43,23 +43,3 @@ body {
   /* separación interna de los contenedores */
   padding: var(--padding-container);
 }
-
-.wave {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: 100% 100px;
-}
-
-.wave--bottom {
-  left: 0;
-  bottom: 0;
-  background-image: var(--wave-bottom);
-}
-
-.wave--top {
-  left: 0;
-  top: 0;
-  background-image: var(--wave-top);
-}

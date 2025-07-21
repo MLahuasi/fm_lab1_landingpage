@@ -1,8 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { WaveSection } from "../../components";
 import "./index.css";
 // ondas
-import bg_section_bottom_mobile_1 from "../../assets/images/bg-section-bottom-mobile-1.svg";
-import bg_section_top_mobile_2 from "../../assets/images/bg-section-top-mobile-2.svg";
+import waveTop from "../../assets/images/bg-section-bottom-mobile-1.svg";
+import waveBottom from "../../assets/images/bg-section-top-mobile-2.svg";
 
 interface MainItemProps {
     src: string;
@@ -14,18 +14,11 @@ interface MainItemProps {
 
 export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }: MainItemProps) => {
 
-    const headerStyle =
-        bgModifier == "section--white"
-            ? {
-                ['--wave-top' as any]: `url(${bg_section_bottom_mobile_1})`,
-                ['--wave-bottom' as any]: `url(${bg_section_top_mobile_2})`,
-            }
-            : undefined;
-
     return (
-        <section
+        <WaveSection
+            waveTop={waveTop}
+            waveBottom={waveBottom}
             className={bgModifier == "none" ? "section" : `section ${bgModifier}`}
-            style={headerStyle}
         >
             <div className={(inverseImage == "none" ? "section__container container" : `section__container ${inverseImage} container`)}>
                 <figure className="section__picture">
@@ -38,11 +31,7 @@ export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }:
                     </p>
                 </div>
             </div>
-
-            {/* Ola en Background */}
-            <div className="wave wave--top"></div>
-            <div className="wave wave--bottom"></div>
-        </section>
+        </WaveSection>
 
     )
 }

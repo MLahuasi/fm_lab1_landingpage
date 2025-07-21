@@ -1,21 +1,19 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { HeaderCounter } from "..";
-import { Button } from "../../components";
+import { Button, WaveSection } from "../../components";
 import "./index.css";
 import logo from "../../assets/images/logo.svg";
 import screen_mockups from "../../assets/images/screen-mockups.svg";
 import icon_communities from "../../assets/images/icon-communities.svg";
 import icon_messages from "../../assets/images/icon-messages.svg";
 // Ondas
-import bg_section_top_mobile_1 from "../../assets/images/bg-section-top-mobile-1.svg";
+import waveBottom from "../../assets/images/bg-section-top-mobile-1.svg";
 
 
 export const Header = () => {
     return (
-        <header className="header"
-            style={{
-                ['--wave-bottom' as any]: `url(${bg_section_top_mobile_1})`
-            }}
+        <WaveSection
+            waveBottom={waveBottom}
+            className="header"
         >
             <nav className="header__nav container">
                 {/* Logo */}
@@ -49,7 +47,7 @@ export const Header = () => {
 
             {/* Ola en Background */}
             <div className="wave wave--bottom"></div>
-        </header>
+        </WaveSection>
     )
 }
 

@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { Button } from "../../components";
+import { Button, WaveSection } from "../../components";
 import "./index.css";
 // ondas
-import bg_section_bottom_mobile_2 from "../../assets/images/bg-section-bottom-mobile-2.svg";
-import bg_footer_top_mobile from "../../assets/images/bg-footer-top-mobile.svg";
+import waveTop from "../../assets/images/bg-section-bottom-mobile-2.svg";
+import waveBottom from "../../assets/images/bg-footer-top-mobile.svg";
 
 interface MainQuestionProps {
     subtitle: string;
@@ -13,22 +12,15 @@ interface MainQuestionProps {
 export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
 
     return (
-        <section
+        <WaveSection
+            waveTop={waveTop}
+            waveBottom={waveBottom}
             className="question"
-            style={{
-                ['--wave-top' as any]: `url(${bg_section_bottom_mobile_2})`,
-                ['--wave-bottom' as any]: `url(${bg_footer_top_mobile})`,
-            }}
         >
             <div className="question__texts container">
                 <h2 className="subtitle">{subtitle}</h2>
                 <Button title={title} href={href} className={"cta"} />
             </div>
-
-
-            {/* Ola en Background */}
-            <div className="wave wave--top"></div>
-            <div className="wave wave--bottom"></div>
-        </section >
+        </WaveSection >
     )
 }
