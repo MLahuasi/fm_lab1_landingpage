@@ -1,5 +1,5 @@
 import { WaveSection } from "../../components";
-import "./index.css";
+import "../../styles/layout/MainItem/index.css";
 
 
 interface MainItemProps {

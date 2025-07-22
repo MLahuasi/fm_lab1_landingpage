@@ -1,4 +1,4 @@
-import "./index.css";
+import "../../styles/layout/FooterContact/index.css";
 
 interface FooterContactProps {
     src: string;

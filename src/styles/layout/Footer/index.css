@@ -1,0 +1,44 @@
+.footer {
+  color: #fff;
+  background-color: var(--very-dark-cyan);
+}
+
+.footer__container {
+}
+
+.footer__newsletter {
+}
+
+.footer__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.footer__paragraph {
+  margin: 1rem 0 3rem;
+}
+
+.footer__paragraph--newsletter {
+  margin: 1rem 0 0;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+  margin-top: 3em;
+}
+
+.footer__content {
+}
+
+.footer__logo {
+}
+
+.footer__social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 40px;
+  gap: 1em;
+}

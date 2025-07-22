@@ -1,6 +1,6 @@
 import { Button, Input } from "../../components";
 import { FooterContact, FooterSocial } from "..";
-import "./index.css";
+import "../../styles/layout/Footer/index.css";
 
 import footer__logo from "../../assets/images/logo-white.svg";
 import icon__phone from "../../assets/images/icon-phone.svg";
@@ -16,7 +16,7 @@ export const Footer = () => {
                 {/* Formulario */}
                 <section className="footer__newsletter">
                     <h2 className="footer__title">Newletter</h2>
-                    <p className="footer_paragraph">
+                    <p className="footer__paragraph footer__paragraph--newsletter">
                         To recieve tips on how to grow your community, sing up to our weekly newsletter. We'll never send you spam or pass on your email address
                     </p>
                     <form action="" className="footer__form">

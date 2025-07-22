@@ -1,0 +1,9 @@
+.footer__input {
+  flex: 100%;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  border: none;
+  border-radius: 3px;
+  padding: 1em 0.3em;
+  margin-bottom: 1em;
+}

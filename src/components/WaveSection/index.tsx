@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ReactNode } from "react";
-import "./index.css";
+import "../../styles/components/WaveSection/index.css";
 
 interface WaveSectionProps {
     waveTop?: string; // Ruta relativa a public (ej: "/assets/waves/top.svg")

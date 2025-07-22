@@ -1,0 +1,22 @@
+.footer__contact {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 1em;
+  align-items: center;
+}
+
+.footer__contact::after {
+  content: "Phone: +1-543-123-4567";
+}
+
+.footer__contact--email {
+  margin: 1em 0 3em;
+}
+
+.footer__contact--email::after {
+  content: "example@huddle.com";
+}
+
+.footer__img {
+}

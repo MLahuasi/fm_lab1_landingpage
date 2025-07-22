@@ -1,5 +1,5 @@
 import { Button, WaveSection } from "../../components";
-import "./index.css";
+import "../../styles/layout/MainQuestion/index.css";
 
 
 interface MainQuestionProps {

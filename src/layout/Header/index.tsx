@@ -1,6 +1,6 @@
 import { HeaderCounter } from "..";
 import { Button, WaveSection } from "../../components";
-import "./index.css";
+import "../../styles/layout/Header/index.css";
 import logo from "../../assets/images/logo.svg";
 import screen_mockups from "../../assets/images/screen-mockups.svg";
 import icon_communities from "../../assets/images/icon-communities.svg";

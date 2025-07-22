@@ -1,5 +1,5 @@
 import { MainItem, MainQuestion } from "..";
-import "./index.css";
+import "../../styles/layout/Main/index.css";
 
 import illustration_grow_together from "../../assets/images/illustration-grow-together.svg";
 import illustration_flowing_conversation from "../../assets/images/illustration-flowing-conversation.svg";
