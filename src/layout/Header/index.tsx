@@ -10,7 +10,7 @@ import icon_messages from "../../assets/images/icon-messages.svg";
 
 export const Header = () => {
     // Ondas
-    const waveBottom = "/assets/waves/bg-section-top-mobile-1.svg";
+    const waveBottom = "/assets/bg-section-top-mobile-1.svg";
     console.log({ waveBottom, Source: "Header" });
     return (
         <WaveSection

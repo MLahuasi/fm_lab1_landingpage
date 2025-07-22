@@ -12,8 +12,8 @@ interface MainItemProps {
 
 export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }: MainItemProps) => {
     // ondas
-    const waveTop = "/assets/waves/bg-section-bottom-mobile-1.svg";
-    const waveBottom = "/assets/waves/bg-section-top-mobile-2.svg";
+    const waveTop = "/assets/bg-section-bottom-mobile-1.svg";
+    const waveBottom = "/assets/bg-section-top-mobile-2.svg";
     console.log({ waveBottom, waveTop, Source: "MainItem" });
 
     return (
