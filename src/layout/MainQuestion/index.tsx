@@ -10,8 +10,8 @@ interface MainQuestionProps {
 export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
 
     // ondas
-    const waveTop = "/assets/bg-section-bottom-mobile-2.svg";
-    const waveBottom = "/assets/bg-footer-top-mobile.svg";
+    const waveTop = "/assets/waves/bg-section-bottom-mobile-2.svg";
+    const waveBottom = "/assets/waves/bg-footer-top-mobile.svg";
     console.log({ waveBottom, waveTop, Source: "MainQuestion" });
 
     return (
