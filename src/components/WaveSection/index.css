@@ -10,12 +10,14 @@
   left: 0;
   bottom: 0;
   background-image: var(--wave-bottom);
+  z-index: 1;
 }
 
 .wave--top {
   left: 0;
   top: 0;
   background-image: var(--wave-top);
+  z-index: 1;
 }
 
 .wave-section {
