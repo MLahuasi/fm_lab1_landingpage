@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ReactNode } from "react";
 import "./index.css";
 
 interface WaveSectionProps {
-    waveTop?: string; // Ruta de imagen para la ola superior
-    waveBottom?: string; // Ruta de imagen para la ola inferior
+    waveTop?: string;
+    waveBottom?: string;
     className?: string;
     children?: ReactNode;
 }
@@ -15,16 +14,15 @@ export const WaveSection = ({
     className = "",
     children,
 }: WaveSectionProps) => {
-    const style = {
-        ...(waveTop && { ['--wave-top' as any]: `url(${waveTop})` }),
-        ...(waveBottom && { ['--wave-bottom' as any]: `url(${waveBottom})` }),
-    };
-
     return (
-        <section className={`wave-section ${className}`} style={style}>
-            {waveTop && <div className="wave wave--top" />}
+        <section className={`wave-section ${className}`}>
+            {waveTop && (
+                <div className="wave wave--top" style={{ backgroundImage: `url(${waveTop})` }} />
+            )}
             {children}
-            {waveBottom && <div className="wave wave--bottom" />}
+            {waveBottom && (
+                <div className="wave wave--bottom" style={{ backgroundImage: `url(${waveBottom})` }} />
+            )}
         </section>
     );
 };
