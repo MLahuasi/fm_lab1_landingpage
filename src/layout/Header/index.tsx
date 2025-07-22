@@ -5,11 +5,12 @@ import logo from "../../assets/images/logo.svg";
 import screen_mockups from "../../assets/images/screen-mockups.svg";
 import icon_communities from "../../assets/images/icon-communities.svg";
 import icon_messages from "../../assets/images/icon-messages.svg";
-// Ondas
-import waveBottom from "../../assets/images/bg-section-top-mobile-1.svg";
+
 
 
 export const Header = () => {
+    // Ondas
+    const waveBottom = "/assets/waves/bg-section-top-mobile-1.svg";
     console.log({ waveBottom, Source: "Header" });
     return (
         <WaveSection

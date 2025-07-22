@@ -1,8 +1,6 @@
 import { Button, WaveSection } from "../../components";
 import "./index.css";
-// ondas
-import waveTop from "../../assets/images/bg-section-bottom-mobile-2.svg";
-import waveBottom from "../../assets/images/bg-footer-top-mobile.svg";
+
 
 interface MainQuestionProps {
     subtitle: string;
@@ -11,6 +9,9 @@ interface MainQuestionProps {
 }
 export const MainQuestion = ({ subtitle, href, title }: MainQuestionProps) => {
 
+    // ondas
+    const waveTop = "/assets/waves/bg-section-bottom-mobile-2.svg";
+    const waveBottom = "/assets/waves/bg-footer-top-mobile.svg";
     console.log({ waveBottom, waveTop, Source: "MainQuestion" });
 
     return (

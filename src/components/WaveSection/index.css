@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 
+/* Reglas para las olas */
 .wave {
   position: absolute;
   width: 100%;
@@ -15,13 +16,16 @@
 .wave--top {
   top: 0;
   left: 0;
+  background-image: var(--wave-top);
 }
 
 .wave--bottom {
   bottom: 0;
   left: 0;
+  background-image: var(--wave-bottom);
 }
 
+/* El contenido queda por encima */
 .wave-section > *:not(.wave) {
   position: relative;
   z-index: 1;
