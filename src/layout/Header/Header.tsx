@@ -1,6 +1,6 @@
 import { HeaderCounter } from "..";
 import { Button, WaveSection } from "../../components";
-import "../../styles/layout/Header/index.css";
+import "./header.css";
 import logo from "../../assets/images/logo.svg";
 import screen_mockups from "../../assets/images/screen-mockups.svg";
 import icon_communities from "../../assets/images/icon-communities.svg";
@@ -9,12 +9,14 @@ import icon_messages from "../../assets/images/icon-messages.svg";
 
 
 export const Header = () => {
-    // Ondas
-    const waveBottom = "/assets//waves/bg-section-top-mobile-1.svg";
-    console.log({ waveBottom, Source: "Header" });
+    // Ondas    
+    const waveBottomMobile = "/assets/waves/bg-section-top-mobile-1.svg";
+    const waveBottomDesktop = "/assets/waves/bg-section-top-desktop-1.svg";
+
     return (
         <WaveSection
-            waveBottom={waveBottom}
+            waveBottomMobile={waveBottomMobile}
+            waveBottomDesktop={waveBottomDesktop}
             className="header"
         >
             <nav className="header__nav container">
@@ -41,13 +43,12 @@ export const Header = () => {
                     <img src={screen_mockups} alt="" className="header__img" />
                 </figure>
                 {/* Contadores */}
-                <footer className="header__numbers">
+                <div className="header__numbers">
                     <HeaderCounter src={icon_communities} number={"1.4k+"} text={"Comminities Formed"} />
                     <HeaderCounter src={icon_messages} number={"2.7m+"} text={"Messages Sent"} />
-                </footer>
+                </div>
             </section>
         </WaveSection>
     )
 }
 
-// 

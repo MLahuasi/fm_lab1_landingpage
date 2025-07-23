@@ -1,8 +1,8 @@
-export { Footer } from "./Footer";
-export { FooterContact } from "./FooterContact";
-export { FooterSocial } from "./FooterSocial";
-export { Header } from "./Header";
-export { HeaderCounter } from "./HeaderItem";
-export { Main } from "./Main";
-export { MainItem } from "./MainItem";
-export { MainQuestion } from "./MainQuestion";
+export { Footer } from "./Footer/Footer";
+export { FooterContact } from "./FooterContact/FooterContact";
+export { FooterSocial } from "./FooterSocial/FooterSocial";
+export { Header } from "./Header/Header";
+export { HeaderCounter } from "./HeaderItem/HeaderItem";
+export { Main } from "./Main/Main";
+export { MainItem } from "./MainItem/MainItem";
+export { MainQuestion } from "./MainQuestion/MainQuestion";

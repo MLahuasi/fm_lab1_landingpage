@@ -1,5 +1,5 @@
 import { WaveSection } from "../../components";
-import "../../styles/layout/MainItem/index.css";
+import "./main-item.css";
 
 
 interface MainItemProps {
@@ -11,15 +11,29 @@ interface MainItemProps {
 }
 
 export const MainItem = ({ src, subtitle, paragraph, bgModifier, inverseImage }: MainItemProps) => {
-    // ondas
-    const waveTop = "/assets//waves/bg-section-bottom-mobile-1.svg";
-    const waveBottom = "/assets//waves/bg-section-top-mobile-2.svg";
-    console.log({ waveBottom, waveTop, Source: "MainItem" });
+    // Lógica de ondas responsive
+    const isWhite = bgModifier === "section--white";
+
+    const waveTopMobile = isWhite
+        ? "/assets/waves/bg-section-bottom-mobile-1.svg"
+        : undefined;
+    const waveTopDesktop = isWhite
+        ? "/assets/waves/bg-section-bottom-desktop-1.svg"
+        : undefined;
+
+    const waveBottomMobile = isWhite
+        ? "/assets/waves/bg-section-top-mobile-2.svg"
+        : undefined;
+    const waveBottomDesktop = isWhite
+        ? "/assets/waves/bg-section-top-desktop-2.svg"
+        : undefined;
 
     return (
         <WaveSection
-            waveTop={waveTop}
-            waveBottom={waveBottom}
+            waveTopMobile={waveTopMobile}
+            waveTopDesktop={waveTopDesktop}
+            waveBottomMobile={waveBottomMobile}
+            waveBottomDesktop={waveBottomDesktop}
             className={bgModifier == "none" ? "section" : `section ${bgModifier}`}
         >
             <div className={(inverseImage == "none" ? "section__container container" : `section__container ${inverseImage} container`)}>

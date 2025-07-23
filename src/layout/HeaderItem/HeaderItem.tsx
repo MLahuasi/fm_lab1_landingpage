@@ -1,4 +1,4 @@
-import "../../styles/layout/HeaderItem/index.css";
+import "./header-item.css";
 
 interface HeaderCounterProps {
     src: string;

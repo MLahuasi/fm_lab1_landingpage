@@ -10,7 +10,7 @@
   height: 100px;
   background-repeat: no-repeat;
   background-size: 100% 100px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .wave--top {
@@ -26,7 +26,7 @@
 }
 
 /* El contenido queda por encima */
-.wave-section > *:not(.wave) {
+/* .wave-section > *:not(.wave) {
   position: relative;
   z-index: 1;
-}
+} */

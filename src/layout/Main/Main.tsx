@@ -1,5 +1,5 @@
 import { MainItem, MainQuestion } from "..";
-import "../../styles/layout/Main/index.css";
+import "./main.css";
 
 import illustration_grow_together from "../../assets/images/illustration-grow-together.svg";
 import illustration_flowing_conversation from "../../assets/images/illustration-flowing-conversation.svg";
@@ -28,7 +28,7 @@ export const Main = () => {
                 subtitle={"Your Users"}
                 paragraph={"It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately."}
                 bgModifier={"none"}
-                inverseImage={"section__container--inverse"}
+                inverseImage={"none"}
             />
             <MainQuestion subtitle={"Ready To Build Your Community?"} href={"#"} title={"Get Started For Free"} />
         </main>

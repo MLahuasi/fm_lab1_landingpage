@@ -3,12 +3,6 @@
   background-color: var(--very-dark-cyan);
 }
 
-.footer__container {
-}
-
-.footer__newsletter {
-}
-
 .footer__title {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -30,9 +24,6 @@
   margin-top: 3em;
 }
 
-.footer__content {
-}
-
 .footer__logo {
 }
 
@@ -41,4 +32,27 @@
   grid-auto-flow: column;
   grid-auto-columns: 40px;
   gap: 1em;
+}
+
+@media (min-width: 768px) {
+  /* Footer */
+  .footer {
+    --padding-container: 7rem 0;
+  }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer__newsletter {
+    order: 1;
+    width: 50%;
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+  .footer__content {
+    width: 50%;
+    max-width: 300px;
+  }
 }

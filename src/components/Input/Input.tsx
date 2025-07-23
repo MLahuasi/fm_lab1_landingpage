@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../styles/components/Input/index.css";
+import "./input.css";
 
 interface InputProps
     extends React.InputHTMLAttributes<HTMLInputElement> {

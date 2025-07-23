@@ -48,3 +48,10 @@
   font-weight: 600;
   margin-left: auto;
 }
+
+@media (min-width: 768px) {
+  /* Buttom */
+  .cta {
+    padding: 1em 2.2em;
+  }
+}

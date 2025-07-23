@@ -1,0 +1,17 @@
+.question {
+  position: relative;
+  text-align: center;
+  --padding-container: 12rem 0 13rem;
+}
+
+.question__texts {
+}
+
+@media (min-width: 768px) {
+  /* MainQuestion */
+  .question {
+    /* --wave-Top: url("/assets/waves/bg-section-bottom-desktop-2.svg");
+    --wave-Bottom: url("/assets/waves/bg-footer-top-desktop.svg"); */
+    --padding-container: 12rem 0 13rem;
+  }
+}

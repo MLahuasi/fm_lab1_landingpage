@@ -1,6 +1,6 @@
 import { Button, Input } from "../../components";
 import { FooterContact, FooterSocial } from "..";
-import "../../styles/layout/Footer/index.css";
+import "./footer.css";
 
 import footer__logo from "../../assets/images/logo-white.svg";
 import icon__phone from "../../assets/images/icon-phone.svg";

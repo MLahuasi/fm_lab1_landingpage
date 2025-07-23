@@ -64,3 +64,31 @@
   align-items: center;
   padding-bottom: 100px;
 }
+
+@media (min-width: 768px) {
+  /* .header {
+    --wave-bottom: url("/assets//waves/bg-section-top-desktop-1.svg");
+  } */
+
+  .header__main {
+    --padding-container: 8rem 0;
+  }
+
+  .header__title {
+    font-size: 3rem;
+  }
+
+  .header__paragraph {
+    width: 70%;
+  }
+
+  .header__numbers {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* HeaderItem */
+  .header__number {
+    font-size: 4rem;
+  }
+}

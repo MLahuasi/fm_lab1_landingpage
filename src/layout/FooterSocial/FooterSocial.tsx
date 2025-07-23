@@ -1,4 +1,4 @@
-import "../../styles/layout/FooterSocial/index.css";
+import "./footer-social.css";
 
 interface FooterSocialProps {
     href: string;

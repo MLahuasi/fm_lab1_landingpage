@@ -1,21 +1,39 @@
-# React + TypeScript + Vite
+# Huddle landing page with curved sections
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview](./public/preview.png)
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+This project is a **responsive Landing Page** built with **React + Vite**, deployed on [Vercel](https://fmlab1landingpage.vercel.app/).
 
-## Deploy Your Own
+---
 
-Deploy your own Vite project with Vercel.
+## Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+> - Live site:
+> - [https://fmlab1landingpage.vercel.app/](https://fmlab1landingpage.vercel.app/)
 
-_Live Example: https://vite-react-example.vercel.app_
+---
 
-### Deploying From Your Terminal
+## Tecnologías utilizadas
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS
+- [Vercel](https://vercel.com/) (hosting)
 
-```shell
-$ vercel
+---
+
+## Local Installation
+
+```
+# 1. Clone the repository
+git clone https://github.com/tu-usuario/fm_lab1_landingpage.git
+cd fm_lab1_landingpage
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
+npm run dev
+
 ```

@@ -13,3 +13,10 @@
 
 .header__community {
 }
+
+@media (min-width: 768px) {
+  /* HeaderItem */
+  .header__number {
+    font-size: 4rem;
+  }
+}
